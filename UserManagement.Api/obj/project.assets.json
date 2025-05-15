@@ -1,11 +1,71 @@
 {
   "version": 3,
   "targets": {
-    "net9.0": {}
+    "net9.0": {
+      "UserManagement.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/UserManagement.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UserManagement.Application.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "UserManagement.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/UserManagement.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UserManagement.Domain.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "UserManagement.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/UserManagement.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UserManagement.Infrastructure.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "UserManagement.Application/1.0.0": {
+      "type": "project",
+      "path": "../UserManagement.Application/UserManagement.Application.csproj",
+      "msbuildProject": "../UserManagement.Application/UserManagement.Application.csproj"
+    },
+    "UserManagement.Domain/1.0.0": {
+      "type": "project",
+      "path": "../UserManagement.Domain/UserManagement.Domain.csproj",
+      "msbuildProject": "../UserManagement.Domain/UserManagement.Domain.csproj"
+    },
+    "UserManagement.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../UserManagement.Infrastructure/UserManagement.Infrastructure.csproj",
+      "msbuildProject": "../UserManagement.Infrastructure/UserManagement.Infrastructure.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net9.0": []
+    "net9.0": [
+      "UserManagement.Application >= 1.0.0",
+      "UserManagement.Domain >= 1.0.0",
+      "UserManagement.Infrastructure >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\User\\.nuget\\packages\\": {},
@@ -38,7 +98,17 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\User\\source\\repos\\UserManagement.Api\\UserManagement.Application\\UserManagement.Application.csproj": {
+              "projectPath": "C:\\Users\\User\\source\\repos\\UserManagement.Api\\UserManagement.Application\\UserManagement.Application.csproj"
+            },
+            "C:\\Users\\User\\source\\repos\\UserManagement.Api\\UserManagement.Domain\\UserManagement.Domain.csproj": {
+              "projectPath": "C:\\Users\\User\\source\\repos\\UserManagement.Api\\UserManagement.Domain\\UserManagement.Domain.csproj"
+            },
+            "C:\\Users\\User\\source\\repos\\UserManagement.Api\\UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\User\\source\\repos\\UserManagement.Api\\UserManagement.Infrastructure\\UserManagement.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
