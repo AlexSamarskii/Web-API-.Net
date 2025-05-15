@@ -17,10 +17,8 @@ namespace UserManagement.Infrastructure.Repositories
             _context = context;
         }
 
-        public User? GetByLogin(string login)
-        {
-            return _context.Users.FirstOrDefault(u => u.Login == login);
-        }
+        public IEnumerable<User> GetAll() => _context.Users.ToList();
+        public User? GetByLogin(string login) => _context.Users.FirstOrDefault(u => u.Login == login);
 
         public User? GetByLoginAndPasswordHash(string login, string passwordHash)
         {

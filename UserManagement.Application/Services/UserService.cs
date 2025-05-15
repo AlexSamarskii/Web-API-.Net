@@ -30,7 +30,7 @@ public class UserService
         {
             Id = Guid.NewGuid(),
             Login = request.Login,
-            Password = request.Password,
+            PasswordHash = request.Password,
             Name = request.Name,
             Gender = request.Gender,
             Birthday = request.Birthday,
@@ -65,7 +65,7 @@ public class UserService
             throw new Exception("Permission denied");
 
         ValidatePassword(newPassword);
-        user.Password = newPassword;
+        user.PasswordHash = newPassword;
         user.ModifiedOn = DateTime.UtcNow;
         user.ModifiedBy = requester;
     }
@@ -108,7 +108,7 @@ public class UserService
 
     public User Authenticate(string login, string password)
     {
-        var user = _users.FirstOrDefault(u => u.Login == login && u.Password == password);
+        var user = _users.FirstOrDefault(u => u.Login == login && u.PasswordHash == password);
         if (user == null || user.RevokedOn != null)
             throw new Exception("Invalid credentials or inactive user");
         return user;

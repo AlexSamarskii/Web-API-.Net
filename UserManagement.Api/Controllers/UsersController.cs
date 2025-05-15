@@ -6,6 +6,7 @@ using System.Reflection;
 using UserManagement.Application.DTOs;
 using UserManagement.Application.Services;
 using UserManagement.Domain.Entities;
+using UserManagement.Domain.Enums;
 
 namespace UserManagement.Api.Controllers;
 

@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Linq;
-using UserManagement.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using UserManagement.Application.Helpers;
-using Microsoft.AspNetCore.Identity;
+using UserManagement.Domain.Entities;
+using UserManagement.Application.Security;
 
 namespace UserManagement.Infrastructure.Data
 {
@@ -13,6 +12,7 @@ namespace UserManagement.Infrastructure.Data
         public static void Initialize(IServiceProvider serviceProvider)
         {
             using var context = serviceProvider.GetRequiredService<AppDbContext>();
+
             context.Database.Migrate();
 
             if (!context.Users.Any(u => u.IsAdmin))
