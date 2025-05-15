@@ -1,6 +1,6 @@
-﻿namespace UserManagement.Infrastructure.Data
+﻿namespace UserManagement.Infrastructure.Repositories
 {
-    public class IUserRepository
+    public interface IUserRepository
     {
     }
 }
