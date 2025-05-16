@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using UserManagement.Domain.Enums;
 
 namespace UserManagement.Domain.Entities
 {
@@ -20,7 +21,7 @@ namespace UserManagement.Domain.Entities
         [RegularExpression(@"^[a-zA-Zа-яА-Я]+$", ErrorMessage = "Name must contain only Latin or Cyrillic letters")]
         public string Name { get; set; } = string.Empty;
 
-        public int Gender { get; set; }
+        public Gender Gender { get; set; }
 
         public DateTime? Birthday { get; set; }
 

@@ -22,7 +22,7 @@ public class UserService
         if (_users.Any(u => u.Login == request.Login))
             throw new Exception("Login already exists");
 
-        var creator = _users.FirstOrDefault(u => u.Login == request.CreatedBy && u.Admin);
+        var creator = _users.FirstOrDefault(u => u.Login == request.Requester && u.IsAdmin);
         if (creator == null)
             throw new Exception("Only admin can create users");
 
@@ -34,9 +34,9 @@ public class UserService
             Name = request.Name,
             Gender = request.Gender,
             Birthday = request.Birthday,
-            Admin = request.Admin,
+            IsAdmin = request.IsAdmin,
             CreatedOn = DateTime.UtcNow,
-            CreatedBy = request.CreatedBy
+            CreatedBy = request.Requester,
         };
 
         _users.Add(user);
@@ -46,7 +46,7 @@ public class UserService
     {
         var user = GetActiveUser(login);
         var actor = GetActiveUser(requester);
-        if (!actor.Admin && actor.Login != user.Login)
+        if (!actor.IsAdmin && actor.Login != user.Login)
             throw new Exception("Permission denied");
 
         ValidateName(name);
@@ -61,7 +61,7 @@ public class UserService
     {
         var user = GetActiveUser(login);
         var actor = GetActiveUser(requester);
-        if (!actor.Admin && actor.Login != user.Login)
+        if (!actor.IsAdmin && actor.Login != user.Login)
             throw new Exception("Permission denied");
 
         ValidatePassword(newPassword);
@@ -74,7 +74,7 @@ public class UserService
     {
         var user = GetActiveUser(oldLogin);
         var actor = GetActiveUser(requester);
-        if (!actor.Admin && actor.Login != user.Login)
+        if (!actor.IsAdmin && actor.Login != user.Login)
             throw new Exception("Permission denied");
 
         ValidateLogin(newLogin);
@@ -150,7 +150,7 @@ public class UserService
 
     private void EnsureAdmin(string login)
     {
-        var user = _users.FirstOrDefault(u => u.Login == login && u.Admin && u.RevokedOn == null);
+        var user = _users.FirstOrDefault(u => u.Login == login && u.IsAdmin && u.RevokedOn == null);
         if (user == null) throw new Exception("Admin access required");
     }
 

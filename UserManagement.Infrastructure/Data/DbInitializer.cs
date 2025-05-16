@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using UserManagement.Domain.Entities;
 using UserManagement.Application.Security;
+using UserManagement.Domain.Enums;
 
 namespace UserManagement.Infrastructure.Data
 {
@@ -23,7 +24,7 @@ namespace UserManagement.Infrastructure.Data
                     Login = "Admin",
                     PasswordHash = PasswordHasher.Hash("Admin123"),
                     Name = "Administrator",
-                    Gender = 2,
+                    Gender = Gender.Unknown,
                     Birthday = null,
                     IsAdmin = true,
                     CreatedOn = DateTime.UtcNow,

@@ -1,0 +1,6 @@
+C:\Users\User\source\repos\UserManagement.Api\UserManagement.Application\obj\Debug\net9.0\UserManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\UserManagement.Api\UserManagement.Application\obj\Debug\net9.0\UserManagement.Application.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\UserManagement.Api\UserManagement.Application\obj\Debug\net9.0\UserManagement.Application.AssemblyInfo.cs
+C:\Users\User\source\repos\UserManagement.Api\UserManagement.Application\obj\Debug\net9.0\UserManagement.Application.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\UserManagement.Api\UserManagement.Application\obj\Debug\net9.0\UserManagement.Application.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\source\repos\UserManagement.Api\UserManagement.Application\obj\Debug\net9.0\UserManagement.Application.sourcelink.json
