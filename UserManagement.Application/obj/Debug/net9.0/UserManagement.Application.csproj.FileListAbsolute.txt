@@ -1,6 +1,16 @@
+C:\Users\User\source\repos\UserManagement.Api\UserManagement.Application\bin\Debug\net9.0\UserManagement.Application.deps.json
+C:\Users\User\source\repos\UserManagement.Api\UserManagement.Application\bin\Debug\net9.0\UserManagement.Application.dll
+C:\Users\User\source\repos\UserManagement.Api\UserManagement.Application\bin\Debug\net9.0\UserManagement.Application.pdb
+C:\Users\User\source\repos\UserManagement.Api\UserManagement.Application\bin\Debug\net9.0\UserManagement.Domain.dll
+C:\Users\User\source\repos\UserManagement.Api\UserManagement.Application\bin\Debug\net9.0\UserManagement.Domain.pdb
+C:\Users\User\source\repos\UserManagement.Api\UserManagement.Application\obj\Debug\net9.0\UserManagement.Application.csproj.AssemblyReference.cache
 C:\Users\User\source\repos\UserManagement.Api\UserManagement.Application\obj\Debug\net9.0\UserManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\User\source\repos\UserManagement.Api\UserManagement.Application\obj\Debug\net9.0\UserManagement.Application.AssemblyInfoInputs.cache
 C:\Users\User\source\repos\UserManagement.Api\UserManagement.Application\obj\Debug\net9.0\UserManagement.Application.AssemblyInfo.cs
 C:\Users\User\source\repos\UserManagement.Api\UserManagement.Application\obj\Debug\net9.0\UserManagement.Application.csproj.CoreCompileInputs.cache
-C:\Users\User\source\repos\UserManagement.Api\UserManagement.Application\obj\Debug\net9.0\UserManagement.Application.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\User\source\repos\UserManagement.Api\UserManagement.Application\obj\Debug\net9.0\UserManagement.Application.sourcelink.json
+C:\Users\User\source\repos\UserManagement.Api\UserManagement.Application\obj\Debug\net9.0\UserMana.22515BBA.Up2Date
+C:\Users\User\source\repos\UserManagement.Api\UserManagement.Application\obj\Debug\net9.0\UserManagement.Application.dll
+C:\Users\User\source\repos\UserManagement.Api\UserManagement.Application\obj\Debug\net9.0\refint\UserManagement.Application.dll
+C:\Users\User\source\repos\UserManagement.Api\UserManagement.Application\obj\Debug\net9.0\UserManagement.Application.pdb
+C:\Users\User\source\repos\UserManagement.Api\UserManagement.Application\obj\Debug\net9.0\ref\UserManagement.Application.dll
